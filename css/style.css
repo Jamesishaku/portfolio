@@ -330,6 +330,47 @@ h5 {
   height: 350px;
   margin-top: 15px;
   background-color: #fff;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.card .card-text{
+  width: inherit;
+  height: inherit;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 0;
+  bottom: -350px;
+  z-index: 10;
+  font-size: 14px;
+  padding: 1rem;
+  background-color:#45ce4a;
+}
+
+.card .card-text a{
+  color: #f80332;
+}
+
+.card:hover .card-text{
+  display: flex;
+  bottom: 0px;
+  transition: .5s ease-in-out;
+}
+
+.projects .cards .card:nth-child(1){
+  background-image: url("../img/aptechlekki.png");
+}
+
+.projects .cards .card:nth-child(2){
+  background-image: url("../img/Dayclar.png");
+}
+
+.projects .cards .card:nth-child(3){
+  background-image: url("../img/doorlity.png");
 }
 
 /* About Page */
